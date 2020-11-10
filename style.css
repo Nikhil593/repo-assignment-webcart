@@ -1,0 +1,248 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.snackbar-message{
+  background-color: lightgreen;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  height: 30px;
+  color: white;
+  line-height: 32px;
+}
+.header_headline{
+    position: relative;
+top: 10px;
+left: 20px;
+font-size: 20px;
+color: #8e8383;
+
+}
+/* cart css */
+
+
+.cart-container {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-container .header {
+    background-color: white;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+}
+.discount_tag{
+    height: 24px;
+    line-height: 25px;
+    width: 43px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    background-color: lightgreen;
+    position: absolute;
+    top: 40px;
+
+}
+.cart-container #content {
+  overflow: auto;
+  flex: 1;
+  text-align: center;
+}
+
+.shopping-item:first-child {
+  margin-top: 20px;
+}
+#contents{
+  width: 75%;
+}
+.shopping-item {
+  width: 240px;
+  position: relative;
+  background-color: #fff;
+  height: 247px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  text-align: left;
+  display: inline-block;
+  text-align: left;
+}
+
+/* .shopping-item>div {
+  line-height: 17px;
+  font-size: 12px;
+  padding-top: 10px;
+  color: #017ADB;
+  font-weight: bold;
+  cursor: pointer;
+  max-height: 68px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} */
+
+#image {
+  width: 155px;
+  text-align: center;
+  display: block;
+  height: 155px;
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+.shopping-item i {
+  color: #FFC94A;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.shopping-item b.favorite-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #E83D3D;
+  border-radius: 30px;
+  display: block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.shopping-item b.favorite-icon svg {
+  height: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer{
+  display: grid;
+  position: absolute;
+  background-color: lightgrey;
+  bottom: 0px;
+  height: 62px;
+  /* margin-left: 10px; */
+  font-size: 12px;
+  /* position: absolute; */
+  width: 100%;
+}
+.footerbutton{
+    color: lightskyblue;
+    position: absolute;
+    color: lightskyblue;
+    text-align: right;
+    border-radius: 8px;
+    right: 15px;
+    border: 1px solid lightskyblue;
+    bottom: 4px;
+    padding: 5px;
+    background-color: white;    
+}
+
+.text_align{
+  font-size: 14px;
+  position: relative;
+  bottom: 35px;
+}
+.discounted_rate{
+  font-weight: bold;
+  margin-left: 10px;
+
+
+}
+#calculationcontent{
+  width: 25%;
+  margin-top: 20px;
+
+}
+.discounted{
+  color:red;
+  text-decoration:line-through;
+}
+.item{
+  text-align: left;
+  margin-left: 10px;
+}
+.margin_space{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+  #contents {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.flex-container {
+  display: grid !important;
+}
+#calculationcontent {
+  width: 96%;
+  margin-top: 20px;
+
+}
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+
+  text-align: left;
+  padding: 8px;
+}
+.image_short{
+  height: 30px;
+  width: 30px;
+}
+.box_shadow{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+background: white;
+}
+.sub_head{
+  margin-left: 10px;
+}
+.total_amount{
+  border: 1px solid black;
+}
+.flex-container {
+  align-items: flex-start;
+    display: flex;
+  justify-content: space-around;
+  width: 99%;
+}
+.flex-container .column{
+  padding: 10px;
+  -webkit-flex: 1; /* Safari */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* Standard syntax */
+}
+.last_row{
+  background-color: lightgray;
+}

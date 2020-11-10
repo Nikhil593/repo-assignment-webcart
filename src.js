@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td>
-        <img class ="image_short" src=${data[0].image} >
+        <img class ="image_short" src= ${data[0].image} >
 
         ${data[0].name}</td>
         <td > <span>  -   </span>  <span class="box_shadow"> 2 </span> <span>+</span>
